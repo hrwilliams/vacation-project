@@ -1,23 +1,32 @@
 $(document).ready(function() {
-  $("form#dating").submit(function(event){
+  $("form#vacation").submit(function(event){
 
     //$("#entertain")
-    var entertain = parseInt($("#entertain").val());
+    var climate = parseInt($("#climate").val());
 
     //$("#age")
-    var age = parseInt($("#age").val());
+    var city-nature = parseInt($("#city-nature").val());
 
     //$("#activity")
-    var activity = parseInt($("#activity").val());
+    var proximity = parseInt($("#proximity").val());
+
+    var activities = parseInt($("#activities").val());
+
+    var energy-level = parseInt($("#energy-level").val())
 
 
 
-    if (entertain === 1 && age === 2 && activity === 1) {
-      $('#morrison').show();
-      $('#bieber').hide();
-      $('#mariah').hide();
-      $('#dicaprio').hide();
-      $('#sandler').hide();
+    if (climate === 1 && city-nature === 2 && proximity === 2) {
+      $('#alaska').show();
+      $('#coast').hide();
+      $('#gorge').hide();
+      $('#crater').hide();
+      $('#redwoods').hide();
+      $('#nyc').hide();
+      $('#df').hide();
+      $('#yelapa').hide();
+      $('#europe').hide();
+      $('#everglades').hide();
     } else if (animal === 2) {
       $('#snake').show();
       $('#turtle').hide();
