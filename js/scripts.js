@@ -1,36 +1,40 @@
 $(document).ready(function() {
   $("form#vacation").submit(function(event){
 
-    //$("#entertain")
     var climate = parseInt($("#climate").val());
 
-    //$("#age")
-    var city-nature = parseInt($("#city-nature").val());
+    var cityNature = parseInt($("#cityNature").val());
 
-    //$("#activity")
     var proximity = parseInt($("#proximity").val());
 
-    var activities = parseInt($("#activities").val());
+    var activities = parseInt($("activities").val());
 
-    var energy-level = parseInt($("#energy-level").val())
+    var energyLevel = parseInt($("energyLevel").val());
 
-
-
-    if (climate === 1 && city-nature === 2 && proximity === 2) {
+    if (climate === 1 && cityNature === 2 && proximity === 2) {
       $('#alaska').show();
       $('#coast').hide();
-      $('#gorge').hide();
-      $('#crater').hide();
-      $('#redwoods').hide();
       $('#nyc').hide();
       $('#df').hide();
       $('#yelapa').hide();
       $('#europe').hide();
       $('#everglades').hide();
-    } else if (animal === 2) {
-      $('#snake').show();
-      $('#turtle').hide();
-      $('#spider').hide();
+    } else if (climate === 1 && cityNature ===2 && proximity === 1) {
+      $('#coast').show();
+      $('#alaska').hide();
+      $('#nyc').hide();
+      $('#df').hide();
+      $('#yelapa').hide();
+      $('#europe').hide();
+      $('#everglades').hide();
+    } else if (cityNature === 1 && proximity === 2 && energyLevel === 2) {
+      $('#nyc').show();
+      $('#alaska').hide();
+      $('#coast').hide();
+      $('#df').hide();
+      $('#yelapa').hide();
+      $('#europe').hide();
+      $('#everglades').hide();
     } else {
       (animal === 3)
       $('#spider').show();
@@ -39,5 +43,7 @@ $(document).ready(function() {
     }
 
     event.preventDefault();
+
+
   });
 });
