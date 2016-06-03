@@ -29,7 +29,10 @@ $(document).ready(function() {
       $('#yelapa').hide();
       $('#europe').hide();
       $('#everglades').hide();
-    } else if (cityNature === 1 && proximity === 2 && energyLevel === 2) {
+
+    // *something is wrong with energyLevel figure out and add to all else and else if's that apply
+
+    } else if (cityNature === 1 && proximity === 2) {
       $('#nyc').show();
       $('#alaska').hide();
       $('#coast').hide();
@@ -37,11 +40,40 @@ $(document).ready(function() {
       $('#yelapa').hide();
       $('#europe').hide();
       $('#everglades').hide();
+      $('#space').hide();
+
+
+    } else if (climate === 2 && cityNature === 1 && proximity == 2) {
+      $('#df').show();
+      $('#alaska').hide();
+      $('#nyc').hide();
+      $('#coastf').hide();
+      $('#yelapa').hide();
+      $('#europe').hide();
+      $('#everglades').hide();
+      $('#space').hide();
+
+    } else if (climate === 2 && cityNature === 2 && proximity == 2) {
+        $('#yelapa').show();
+        $('#alaska').hide();
+        $('#nyc').hide();
+        $('#coastf').hide();
+        $('#df').hide();
+        $('#europe').hide();
+        $('#everglades').hide();
+        $('#space').hide();
+
     } else {
-      (animal === 3)
-      $('#spider').show();
-      $('#snake').hide();
-      $('#turtle').hide();
+
+      $('#space').show();
+      $('#alaska').hide();
+      $('#nyc').hide();
+      $('#coastf').hide();
+      $('#df').hide();
+      $('#europe').hide();
+      $('#everglades').hide();
+      $('#yelapa').hide();
+
     }
 
     event.preventDefault();

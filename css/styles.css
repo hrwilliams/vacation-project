@@ -1,3 +1,16 @@
-#alaska, #coast, #nyc, #df, #yelapa, #europe, #everglades {
+#alaska, #coast, #nyc, #df, #yelapa, #europe, #everglades, #space {
   display: none;
+  color: #69BFDB;
+}
+
+button {
+  margin-top: 20px;
+}
+
+body {
+  background-color: #8c8c8c;
+}
+
+h1 {
+  padding-bottom: 20px;
 }
