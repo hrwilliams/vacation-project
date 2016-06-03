@@ -13,39 +13,51 @@
 
       <h1>Where Should You Go On A Vacation?</h1>
       <form id="vacation">
-        <h2>What climate do you prefer?</h2>
+
+        <!-- <div class="form-group">
+          <h3>Enter your budget in dollars, no dollar sign plz.</h3>
+          <input type="text" id="budget">
+        </div> -->
+
+        <div class="form-group">
+          <label for="budget">Enter your budget: $</label>
+          <input id="budget" type="text">
+        </div>
+
+
+        <h3>What climate do you prefer?</h3>
         <select class="form-control" id="climate">
           <option value="1">Cool</option>
           <option value="2">Warm</option>
         </select>
 
-        <h2>Do you prefer the city or nature?</h2>
+        <h3>Do you prefer the city or nature?</h3>
           <select class="form-control" id="cityNature">
             <option value="1">City</option>
             <option value="2">Nature</option>
           </select>
 
 
-      <h2>Would you like to stay in Oregon or go elsewhere?</h2>
+      <h3>Would you like to stay in Oregon or go elsewhere?</h3>
         <select class="form-control" id="proximity">
           <option value="1">Oregon</option>
           <option value="2">Elsewhere</option>
         </select>
 
-      <h2>What activities do you like?</h2>
+      <h3>What activities do you like?</h3>
         <select class="form-control" id="activities">
           <option value="1">Live Music</option>
           <option value="2">Museums</option>
           <option value="3">Shopping</option>
         </select>
 
-        <h2>Do you prefer to be active or relax?</h2>
+        <h3>Do you prefer to be active or relax?</h3>
           <select class="form-control" id="energyLevel">
             <option value="1">Active</option>
             <option value="2">Chill hard</option>
           </select>
 
-        <button type="submit" class="btn">Submit!</button>
+        <button type="submit" class="btn">Find your destination!</button>
       </form>
 
       <div id="alaska">

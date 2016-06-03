@@ -1,6 +1,8 @@
 $(document).ready(function() {
   $("form#vacation").submit(function(event){
 
+    var budget = parseInt($("input#budget").val());
+
     var climate = parseInt($("#climate").val());
 
     var cityNature = parseInt($("#cityNature").val());
